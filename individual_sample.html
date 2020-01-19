@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <!-- Declare  character set, metadata, title and linking style.css stylesheet-->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Review of Glen Rouge Campground">
+        <meta name="keywords" content="camping, camp sites, camping sites, Glen, Rougeß">
+        <meta name="author" content="Teodor Tomescu">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Glen Rouge reviews</title>
+        <link rel="stylesheet" href="./css/style.css">
+        <script src="./scripts/indvmaps.js"></script>
+</head>
+<body>
+    <!-- Declare header -->
+    <header>
+        <div class="container">
+            <div id="brand">
+                <h1>Camp<span class = "highlight">Fire</span></h1>
+            </div>
+            <!-- Declare nav bar-->
+            <nav>
+                <ul>
+                    <!-- Navigation bar buttons -->
+                    <li><a href="search.html">Home</a></li>
+                    <li><a href="submission.html">Submit a campsite</a></li>
+                    <li><a href="About.html">About</a></li>
+                    <li><a href="Login.html">Log in</a></li>
+                    <li><a href="registration.html">Sign up</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+        <!-- Create section containing information -->
+    <section id="individualResult">
+        <div class="bicontainer" id="IRtext">
+                <!-- Title and desc -->
+                <h1>Glen Rouge Campground</h1>
+                <p><span>&#128293;</span><span>&#128293;</span><span>&#128293;</span><span>&#128293;</span><span>&#128293;</span> by 2 reviewers</p>
+                <h2>Description</h2>
+                <p>
+                        
+                    Glen Rouge is the only campground located within the City of Toronto. 
+                    It offers campers a unique experience: both the natural beauty of a park, 
+                    and proximity to urban amenities and attractions.
+                    
+                </p>
+        </div>
+        <!-- Link image -->
+        <div id="mapcont2">
+            <div id="map2"></div>
+            <script async defer
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCOwugZY04hVMOjN5_Tjgr_R40oRxNW1jY&callback=initMap">
+            </script>
+        </div>
+
+        <div class="container">
+            <!-- Create user review section using the same custom-counter class used in results_sample-->
+            <h1>User Reviews</h1>
+            <ol class="custom-counter">
+                
+                <li>
+                    <h1>Great campsite!</h1>
+                    <p><span>&#128293;</span><span>&#128293;</span><span>&#128293;</span><span>&#128293;</span><span>&#128293;</span></p>
+                    <p>
+                        This place is amazing. Its like having nature in the city. I always come here for dog walks or to go kayaking in the summer. The camp grounds are pretty reasonably priced as well. 
+                        There's a lot of different trails and they're really long, so you can walk for hours if you want to. 
+                        The one trail has some really steep hills, so it may be a bit challenging if you want to ride a bike there, but I've seen people do it before.
+                    </p>
+                    <p>- John Doe</p>
+
+                </li>
+                <li>
+                    <h1>Awesome stay</h1>
+                    <p><span>&#128293;</span><span>&#128293;</span><span>&#128293;</span><span>&#128293;</span><span>&#128293;</span></p>
+                    <p>
+                        This place is great for walks, dog walks, camping, picnics, trails. They also offer these cool little cabins, 
+                        an have a bathroom and shower area.  Inexpensive,  and small restaurants nearby.
+                    </p>
+                    <p>- Jane James</p>
+                </li>
+                
+                
+            </ol>
+        </div>
+    </section>
+    <!-- Create footer -->
+    <footer>
+        <p>CampFire Inc, Copyright &copy; 2018</p>
+    </footer>
+    
+</body>
+</html>

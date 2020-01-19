@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <!-- Declare  character set, metadata, title and linking style.css stylesheet-->
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <meta name="author" content="Teodor Tomescu">
+ <meta http-equiv="X-UA-Compatible" content="ie=edge">
+ <title>Searching for Campsite</title>
+ <link rel="stylesheet" href="./css/style.css">
+ <script src="./scripts/maps.js"></script>
+</head>
+<body>
+    <!-- Declare header -->
+    <header>
+        <div class="container">
+            <div id="brand">
+                <h1>Camp<span class = "highlight">Fire</span></h1>
+            </div>
+            <!-- Create nav bar -->
+            <nav>
+                <ul>
+                    <!-- Navigation bar buttons -->
+                    <li><a href="search.html">Home</a></li>
+                    <li><a href="submission.html">Submit a campsite</a></li>
+                    <li><a href="About.html">About</a></li>
+                    <li><a href="Login.html">Log in</a></li>
+                    <li><a href="registration.html">Sign up</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <!-- Create section that will contain the search results-->
+    
+    <div class="container">
+        <div class="bicontainer" id="resultsTitle">
+                <h1>Search results:</h1>
+                <!-- Declare an unordered list with the class custom-counter which will later be used to give our list items some personality-->
+                <ol class="custom-counter">
+                    <!-- Create random campsites-->
+                    <li>
+                        <h1><a href="individual_sample.html">Glen Rouge Campground</a></h1>
+                        <p><span>&#128293;</span><span>&#128293;</span><span>&#128293;</span><span>&#128293;</span><span>&#128293;</span></p>
+                        <p>Latitude, longitude: 43.8050234, -79.1394137 N43° 48.3014', W079° 8.3648'</p>
+                    </li>
+                    <li>
+                        <h1><a href="individual_sample.html">Cedar Beach Resort </a></h1>
+                        <p><span>&#128293;</span><span>&#128293;</span><span>&#128293;</span><span>&#128293;</span></p>
+                        <p>Latitude, longitude: 44.0345701, -79.2709219 N44° 2.0742', W079° 16.2553'</p>
+                    </li>
+                    <li>
+                        <h1><a href="individual_sample.html">Cedar Park Resort</a></h1>
+                        <p><span>&#128293;</span><span>&#128293;</span><span>&#128293;</span><span>&#128293;</span></p>
+                        <p>Latitude, longitude: 43.990719, -78.73886 N43° 59.4431', W078° 44.3316'</p>
+                    </li>
+                    
+                </ol>
+            </div>
+            <div id="mapcont">
+                <div id="map"></div>
+                <script async defer
+                src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDE2D3YRJbeIx4NjHvFo3I_X0a0PlUg42s&callback=initMap">
+                </script>
+            </div>
+    </div>
+        
+
+    
+    <!-- Delcare footer -->
+    <footer>
+        <p>CampFire Inc, Copyright &copy; 2018</p>
+    </footer>
+
+</body>
+</html>

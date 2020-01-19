@@ -1,0 +1,10 @@
+version: '3'
+
+services:
+  app:
+    image: fauria/lamp
+    volumes:
+      - ./:/var/www/html
+    ports:
+      - "8888:80"
+      - "3306:3306"

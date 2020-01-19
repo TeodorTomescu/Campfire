@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Declare  character set, metadata, title and linking style.css stylesheet-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Find the best camping sites near you">
+    <meta name="keywords" content="camping, camp sites, camping sites, campfire, CampFire">
+    <meta name="author" content="Teodor Tomescu">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Submit Campsite | CampFire</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <!-- Create header -->
+    <header>
+        <div class="container">
+            <div id="brand">
+                <h1>Camp<span class = "highlight">Fire</span></h1>
+            </div>
+            <!-- Create nav bar -->
+            <nav>
+                <ul>
+                    <!-- Navigation bar buttons -->
+                    <li><a href="search.html">Home</a></li>
+                    <li class="current"><a href="submission.html">Submit a campsite</a></li>
+                    <li><a href="About.html">About</a></li>
+                    <li><a href="Login.html">Log in</a></li>
+                    <li><a href="registration.html">Sign up</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <!-- Create title for campsite submission form-->
+    <div id="titleTing">
+        <h1>Submit a new campsite!</h1>
+    </div>
+    <div class="login-page">
+        <!-- Declare submission form, input fields, and validate that the campsite name is greater than 2 digits-->
+        <div class="form">
+            <form class="register-form">
+                <input type="text" placeholder="Campsite name" required pattern=".{2,}">
+                <textarea cols="42" rows="20" placeholder="Description"></textarea>
+                <input required type="text" placeholder="Latitude">
+                <input required type="text" placeholder="Longitude">
+                <!-- image submission -->
+                Select image to upload:
+                <input type="file" name="fileToUpload" id="fileToUpload">
+                <input type="submit" value="Submit" id="submit">
+            </form>
+
+         
+        </div>
+    </div>
+    <!-- Declare footer -->
+    <footer>
+        <p>CampFire Inc, Copyright &copy; 2018</p>
+    </footer>
+    
+</body>
+</html>

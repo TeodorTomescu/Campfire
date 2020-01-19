@@ -1,0 +1,331 @@
+/* Global options */
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    line-height: 1.5;
+    padding: 0;
+    margin: 0;
+    background-color: #f4f4f4;
+}
+.container{
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+
+/* Remove marign and padding for all UL's */
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+/* Format header*/
+header{
+    background: rgb(13,71,107);
+    color: white;
+    padding-top: 30px;
+    min-height: 70px;
+    border-bottom: rgb(255,71,22) 3px solid;
+}
+/* Remove underline from items in nav bar */
+header a{
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+/* Display menu items horizontally*/
+header li {
+    display: inline;
+    padding: 0 20px 0 20px;
+} 
+/* Float logo left */
+header #brand {
+    float: left;
+}
+
+header #brand h1{
+    margin: 0;
+}
+/* Float nav menu right */
+header nav {
+    float: right;
+    margin-top: 10px;
+}
+/*Define highlight and current class that will be used w*/
+.highlight, header .current a {
+    color: rgb(255,71,22);
+    font-weight: bold;
+}
+/* Hover color for nav menu*/
+header a:hover{
+    color: rgb(154, 174, 194);
+}
+
+/* Add background and center for the showcase*/
+#showcase {
+    min-height: 400px;
+    background:url('../img/camping.jpg') no-repeat center 0 fixed;
+    background-size: cover;
+    color: white;
+}
+/* Format showcase header */
+#showcase h1{
+    margin-top: 50px;
+    font-size: 55px;
+    margin-bottom: 10px;
+}
+/* Format showcase paragraph */
+#showcase p{
+    font-size: 20px;
+}
+
+/* Format the search bar section*/
+#searchbars{
+    padding: 15px;
+    color: white;
+    background: rgb(13,71,107);
+}
+/* Centre search bar*/
+.searchform {
+    margin: auto;
+    padding: 0 0 0 20%;
+}
+
+/* Format the text search bar */
+#searchbars input{
+    width: 70%;
+    margin: 0 0 10px;
+    padding: 15px;
+    box-sizing: border-box;
+    font-size: 14px;
+    border: 0;
+}
+/* Format the search bar's button */
+#searchbars button{
+    background: rgb(255,71,22);
+    width: 20%;
+    margin: 0 0 10px;
+    padding: 15px;
+    font-size: 14px;
+    border: 0;
+    color: white;
+}
+/* Format the dropdown search bar */
+#searchbars select{
+    width: 70%;
+    margin: 0 0 10px;
+    height: 50px;
+    box-sizing: border-box;
+    font-size: 14px;
+    border: 0;
+}
+
+/*Format boxes containing png photos*/
+#boxes {
+    margin-top: 20px;
+}
+
+#boxes .box{
+    float: left;
+    width: 30%;
+    padding: 10px;
+    text-align: center;
+}
+
+#boxes .box img{
+    width: 90px;
+}
+/* Format footer*/
+footer{
+    padding: 20px;
+    margin-top: 20px;
+    color: white;
+    background-color: rgb(255,71,22);
+    text-align: center;
+}
+/* Format size of the author credit paragraph*/
+#creditAuthor{
+    font-size: 10px;
+}
+
+
+
+
+/*/// Format SearchResults page elements///*/
+
+/* Format custom-counter class*/
+.custom-counter {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    float: left;
+  }
+  /* Increment by 1*/
+  .custom-counter li {
+    counter-increment: step-counter;
+    margin-bottom: 5px;
+    
+  }
+  /* Format the list to give each numbered element a colored circle around it with white texts*/ 
+  .custom-counter li::before {
+    content: counter(step-counter);
+    margin-right: 20px;
+    font-size: 80%;
+    background-color: rgb(13,71,107);
+    color: white;
+    font-weight: bold;
+    padding: 3px 8px;
+    border-radius: 11px;
+  }
+  /* Display object headers inline and change font size */
+  .custom-counter li h1 {
+      display: inline;
+      font-size: 17px;
+  }
+
+  .custom-counter li p {
+    margin-left: 48px;
+}
+
+#resultsTitle ol {
+    margin-right: 70px;
+}
+
+/* Format the link to the individual results page */
+#resultsTitle ol li a {
+    text-decoration: none;
+    color: black;
+}
+
+#resultsTitle ol li a:hover {
+    color: rgb(255,71,22);
+}
+/* media query to adjust the map to better fit screens with a width less than 650px */
+@media screen and (max-width: 650px){
+    #map {
+        height: auto;
+        width: 100%;
+        padding-left: 0%;
+    }
+}
+
+
+
+/*/// Format the individual results page ///*/
+#individualResult h2 {
+    font-size: 15pt;
+}
+#IRtext{
+    max-width: 100%;
+    padding-left: 10%;
+
+}
+/* Format bicontainers to be half as wide as containers*/
+.bicontainer{
+    width: 40%;
+    margin: auto;
+    overflow: hidden;
+    float: left;
+}
+/* Format image inside bicontainers*/
+.bicontainer img{
+    width: 100%;
+    height: 100%;
+    padding: 20% 0 0 10%;
+    max-width: 300px;
+    max-height: 300px;
+}
+/* media query to place bicontainers on top of eachother once the screen become smaller than 700px */
+@media screen and (max-width: 700px){
+    .bicontainer{
+        width: 80%;
+        margin: auto;
+        overflow: hidden;
+        float: none;
+    }
+
+    .bicontainer img{
+        width: 100%;
+        height: 100%;
+        padding: 1% 0 0 5%;
+        
+    }
+
+}
+
+
+
+/*/// Format the registration page ///*/
+
+.login-page{
+    width: 360px;
+    margin: auto;
+}
+/* Format form background with a color, stack order, postition etc.*/
+.form {
+    position: relative;
+    z-index: 1; 
+    background: rgb(98, 177, 225);
+    margin: 0 auto 100px;
+    padding: 45px;
+    max-width: 360px;
+    color: #f4f4f4;
+}
+/* Format text input boxes */
+.form input {
+    width: 100%;
+    margin: 0 0 10px;
+    padding: 15px;
+    box-sizing: border-box;
+    font-size: 14px;
+    border: 0;
+}
+/* Format the button */
+#submit {
+    background: rgb(255,71,22);
+    width: 100%;
+    margin: 0 0 10px;
+    padding: 15px;
+    font-size: 14px;
+    border: 0;
+    color: white;
+}
+/* Format the proivinces dropdown*/
+#provinces {
+    width: 100%;
+    margin: 0 0 10px;
+    padding: 15px;
+    box-sizing: border-box;
+    font-size: 14px;
+    border: 0;
+    height: 50px;
+}
+/* Format the titleTing ID to have the text aligned in the center */
+#titleTing {
+    text-align: center;
+}
+
+#map {
+    min-width: 275px;
+    min-height: 250px;
+}
+
+#mapcont {
+    padding-top: 5%;
+}
+
+#map2 {
+    min-width: 275px;
+    min-height: 250px;
+}
+
+#mapcont2 {
+    padding: 5% 5% 5% 5%;
+}
+
+
+select {
+    border: 1px solid black;
+}

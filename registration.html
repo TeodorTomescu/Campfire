@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Declare  character set, metadata, title and linking style.css stylesheet-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Find the best camping sites near you">
+    <meta name="keywords" content="camping, camp sites, camping sites, campfire, CampFire">
+    <meta name="author" content="Teodor Tomescu">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Sign up | CampFire</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./scripts/formcheck.js"></script>
+</head>
+<body>
+    <!-- Create header -->
+    <header>
+        <div class="container">
+            <!--  Inside brand we span across the word fire and assign the highlight class which is later defined to change text color to orange-->
+            <div id="brand">
+                <h1>Camp<span class = "highlight">Fire</span></h1>
+            </div>
+            <!-- Create nav bar -->
+            <nav>
+                <ul>
+                    <!-- Navigation bar buttons -->
+                    <li><a href="search.html">Home</a></li>
+                    <li><a href="submission.html">Submit a campsite</a></li>
+                    <li><a href="About.html">About</a></li>
+                    <li><a href="Login.html">Log in</a></li>
+                    <li class="current"><a href="registration.html">Sign up</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <!-- Create title for form-->
+    <div id="titleTing">
+        <h1>Sign Up for Camp<span class = "highlight">Fire</span></h1>
+        <p>Start exploring!</p>
+    </div>
+    <!-- Create div for registration page -->
+    <div class="login-page">
+        <!-- Create form where user will input information-->
+        <div class="form">
+            <form class="register-form" action="registration.html" method="post" onsubmit="return checkSignUp();">
+                <!-- Create fields -->
+                <input type="text" id="regFN" placeholder="First name">
+                <input type="text" id="regLN" placeholder="Last name">
+                <input type="text" id="regPN" placeholder="Phone number">
+                <input type="password" id="regPW1" placeholder="Password">
+                <input type="password" id="regPW2" placeholder="Confirm Password">
+                <input type="text" id="regEM" placeholder="Email">
+                <p>Select your province</p>
+                <!-- Create dropdown -->
+                <select id="provinces">
+                    <option value="ON">ON</option>
+                    <option value="QC">QC</option>
+                    <option value="NS">NS</option>
+                    <option value="NB">NB</option>
+                    <option value="MB">MB</option>
+                    <option value="BC">BC</option>
+                    <option value="PE">PE</option>
+                    <option value="SK">SK</option>
+                    <option value="AB">AB</option>
+                    <option value="NL">NL</option>
+                </select>
+                <!-- Create checkbox -->
+                <input type="checkbox"> I accept and fully understand the <a href="https://en.wikipedia.org/wiki/Terms_of_service">terms and conditions</a>  <br> <br>
+                <input type="submit" value="Submit" id="submit">
+            </form>
+
+        </div>
+    </div>
+    <!-- Create footer-->
+    <footer>
+        <p>CampFire Inc, Copyright &copy; 2018</p>
+    </footer>
+    
+</body>
+</html>
